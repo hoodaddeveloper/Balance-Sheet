@@ -1,15 +1,15 @@
 span[class~="sr-only"] {
   border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
+  width: 1px !important;
+  padding: 0 !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
   clip-path: inset(50%) !important;
   -webkit-clip-path: inset(50%) !important;
-  height: 1px !important;
-  width: 1px !important;
-  position: absolute !important;
-  overflow: hidden !important;
-  white-space: nowrap !important;
-  padding: 0 !important;
-  margin: -1px !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 html {
@@ -17,20 +17,20 @@ html {
 }
 
 body {
-  font-family: sans-serif;
   color: #0a0a23;
+  font-family: sans-serif;
 }
 
 h1 {
-  max-width: 37.25rem;
   margin: 0 auto;
+  max-width: 37.25rem;
   padding: 1.5rem 1.25rem;
 }
 
 h1 .flex {
+  gap: 1rem;
   display: flex;
   flex-direction: column-reverse;
-  gap: 1rem;
 }
 
 h1 .flex span:first-of-type {
@@ -42,26 +42,26 @@ h1 .flex span:last-of-type {
 }
 
 section {
-  max-width: 40rem;
   margin: 0 auto;
+  max-width: 40rem;
   border: 2px solid #d0d0d5;
 }
 
 #years {
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
   top: 0;
-  background: #0a0a23;
-  color: #fff;
   z-index: 999;
-  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  display: flex;
+  color: #fff;
   margin: 0 -2px;
+  position: sticky;
+  background: #0a0a23;
+  justify-content: flex-end;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
 }
 
 #years span[class] {
-  font-weight: bold;
   width: 4.5rem;
+  font-weight: bold;
   text-align: right;
 }
 
@@ -70,20 +70,20 @@ section {
 }
 
 table {
-  border-collapse: collapse;
   border: 0;
   width: 100%;
-  position: relative;
   margin-top: 3rem;
+  position: relative;
+  border-collapse: collapse;
 }
 
 table caption {
-  color: #356eaf;
-  font-size: 1.3em;
-  font-weight: normal;
-  position: absolute;
-  top: -2.25rem;
   left: 0.5rem;
+  top: -2.25rem;
+  font-size: 1.3em;
+  color: #356eaf;
+  position: absolute;
+  font-weight: normal;
 }
 
 tbody td {
@@ -97,8 +97,8 @@ tbody th {
 }
 
 tr[class="total"] {
-  border-bottom: 4px double #0a0a23;
   font-weight: bold;
+  border-bottom: 4px double #0a0a23;
 }
 
 tr[class="total"] th {
@@ -135,14 +135,14 @@ tr.data th {
 
 tr.data th .description {
   display: block;
-  font-weight: normal;
   font-style: italic;
+  font-weight: normal;
   padding: 1rem 0 0.75rem;
   margin-right: -13.5rem;
 }
 
 tr.data td {
+  text-align: right;
   vertical-align: top;
   padding: 0.3rem 0.25rem 0;
-  text-align: right;
 }
